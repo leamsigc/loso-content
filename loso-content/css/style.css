@@ -14,6 +14,43 @@ p {
 }
 
 
+/*========Genetic CSS=======*/
+
+.section-title {
+    padding: 90px 5px 50px 5px;
+}
+
+.section-title h2 {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.section-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: #129CF3;
+    margin-left: -30px;
+}
+
+.section-title p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 45px;
+}
+
+
 /******Container main******/
 
 
@@ -33,6 +70,10 @@ p {
 
 .header-overlay {
     background: rgba(31, 31, 31, 0.75);
+}
+
+.header-container {
+    padding: 168px 15px;
 }
 
 .logo {
@@ -105,4 +146,64 @@ p {
 
 .header-iphone img {
     width: 100%;
+}
+
+
+/*******=====About Us =====********/
+
+.choose-us-wrapper {
+    padding-top: 50px;
+    line-height: 20px;
+    text-align: start;
+    color: #333;
+}
+
+.choose-us-title {
+    padding-bottom: 50px;
+}
+
+.choose-us-title h2 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 37px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.choose-us-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    width: 70px;
+    height: 1px;
+    background-color: #129CF3;
+}
+
+.choose-us-title p {
+    margin-top: 40px;
+}
+
+.choose-us-item {
+    padding: 0 0 4px 80px;
+}
+
+.choose-us-item h3 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 22px;
+}
+
+.about-iphone img {
+    margin-top: 10px;
+}
+
+
+/*===About Us Icon===*/
+
+.choose-us-item .fa {
+    font-size: 55px;
+    line-height: 55px;
+    background: #fff;
+    color: #129cf3;
 }
