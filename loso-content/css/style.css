@@ -182,16 +182,24 @@ p {
 
 .choose-us-title p {
     margin-top: 40px;
+    font-size: 19px;
+    line-height: 150%;
+    color: #343434;
 }
 
 .choose-us-item {
     padding: 0 0 4px 80px;
+    position: relative;
+    font-size: 15px;
+    line-height: 150%;
+    color: #727272;
 }
 
 .choose-us-item h3 {
     font-size: 20px;
     font-weight: 800;
     line-height: 22px;
+    text-transform: uppercase;
 }
 
 .about-iphone img {
@@ -201,9 +209,132 @@ p {
 
 /*===About Us Icon===*/
 
-.choose-us-item .fa {
-    font-size: 55px;
-    line-height: 55px;
+.choose-us-item .fa,
+.left-feature-item i,
+.right-feature-item i {
+    position: absolute;
     background: #fff;
     color: #129cf3;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
+
+.choose-us-item .fa,
+.right-feature-item i {
+    top: 0;
+    left: 0;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+
+/*=======Testimonial =============*/
+
+.testimonial {
+    background: url("/loso-content/images/testimonial-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.testimonial-overlay {
+    padding: 80px 0;
+    background: rgba(31, 31, 31, 0.75);
+}
+
+.carousel-indicators {
+    bottom: -10px;
+}
+
+.carousel-inner .item img {
+    border: 2px solid #129cf3;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.testimonial-caption {
+    color: #129cf3;
+    font-size: 18px;
+    padding-bottom: 70px;
+}
+
+.testimonial-caption h2 {
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 33px;
+    text-transform: uppercase;
+}
+
+.testimonial-caption h4 {
+    font-weight: 500;
+}
+
+.testimonial-caption h4 span {
+    color: #d8d8d8;
+    font-weight: 300;
+    /* font-style:italic;*/
+}
+
+.testimonial-caption p {
+    font-size: 18px;
+    color: #d8d8d8;
+    line-height: 27px;
+    padding-top: 50px;
+}
+
+
+/*=======Features =======*/
+
+.left-feature-item,
+.right-feature-item {
+    text-align: right;
+    line-height: 20px;
+    position: relative;
+    color: #333333;
+    margin: 35px 0 65px;
+}
+
+.left-feature-item {
+    padding-right: 90px;
+}
+
+.right-feature-item {
+    padding-left: 90px;
+    text-align: left;
+}
+
+.left-feature-item i {
+    right: 0;
+}
+
+.left-feature-item h3,
+.right-feature-item h3 {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 27.5px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+
+.left-feature-item p,
+.right-feature-item p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 21px;
+    color: #7b7b7b;
+}
+
+.left-feature-item i,
+.right-feature-item i {
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    top: -8px;
+}
+
+.right-feature-item {}
