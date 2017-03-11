@@ -371,6 +371,7 @@ p {
 .screen .row .carousel-inner .item img {
     width: 100%;
     border-radius: 1px;
+    border: none;
 }
 
 
@@ -399,4 +400,76 @@ p {
     font-size: 35px;
     color: #d7dadb;
     font-weight: 700;
+}
+
+.counter-item p {
+    font-size: 20px;
+    color: #d7dadb;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+/*=============Avaible on============*/
+
+.avaible {
+    background: #1a1a1a;
+    color: #b5b5b5;
+    position: relative;
+    margin-top: -8px;
+}
+
+.avaible-title {
+    padding-top: 75px;
+}
+
+.avaible-title h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.avaible-on-item {
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    min-height: 230px;
+    border-left: 1px solid #0f1217;
+}
+
+.avaible-on-item .fa {
+    color: #129cf3;
+    text-align: center;
+    opacity: 1;
+    font-size: 40px;
+    padding-top: 90px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.avaible-on-item .fa:hover {
+    opacity: 0;
+    color: #1a1a1a;
+}
+
+.avaible-on-item .avaible-on-inner:hover {
+    opacity: 1;
+    background: #1a1a1a;
+}
+
+.avaible-on-inner {
+    position: absolute;
+    bottom: 93px;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.avaible-on-inner h2 {
+    font-weight: 300;
+    color: #d7dadb;
 }
