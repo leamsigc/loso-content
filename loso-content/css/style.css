@@ -430,17 +430,27 @@ p {
     color: #fff;
 }
 
+.no-padding {
+    padding: 0 0;
+}
+
 .avaible-on-item {
-    padding-bottom: 15px;
+    padding: 0 0 15px 0;
     text-align: center;
     font-size: 16px;
     text-transform: uppercase;
     position: relative;
     min-height: 230px;
     border-left: 1px solid #0f1217;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
-.avaible-on-item .fa {
+.avaible-on-item:hover {
+    background: #121212;
+}
+
+.avaible-on-item i {
     color: #129cf3;
     text-align: center;
     opacity: 1;
@@ -450,14 +460,8 @@ p {
     transition: all 1s;
 }
 
-.avaible-on-item .fa:hover {
+.avaible-on-item:hover i {
     opacity: 0;
-    color: #1a1a1a;
-}
-
-.avaible-on-item .avaible-on-inner:hover {
-    opacity: 1;
-    background: #1a1a1a;
 }
 
 .avaible-on-inner {
@@ -470,6 +474,11 @@ p {
 }
 
 .avaible-on-inner h2 {
+    font-size: 16px;
     font-weight: 300;
     color: #d7dadb;
+}
+
+.avaible-on-item:hover .avaible-on-inner {
+    opacity: 1;
 }
