@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*======General css======*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+p {
+    margin: 20px 0 40px 0;
+}
+
+.what .title h2 {
+    position: relative;
+}
+
+.title h2:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: #129CF3;
+    margin-left: -30px;
+}
+
+
+/*=======Menu css=======*/
+
+.menu {
+    width: 100%;
+    background: rgb(248, 248, 248);
+}
+
+.menu-item,
+.menu-item:active,
+.menu-item:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    display: inline-block;
+    padding: 20px 40px;
+}
+
+.menu-logo {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+.menu-nav {
+    display: inline-block;
+    width: 49%;
+}
+
+.menu-nav .menu-item {
+    float: right;
+}
+
+.menu-item:hover {
+    color: rgb(26, 188, 156);
+}
+
+
+/*=======Home section =======*/
+
+.home {
+    padding: 70px 20px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 150%;
+    color: #fff;
+    background: rgb(26, 188, 156);
+}
+
+.home-img {
+    display: block;
+    margin: auto;
+    border: 2px solid rgb(26, 188, 156);
+    border-radius: 50%;
+}
+
+.home p {
+    margin: 20px 0 40px 0;
+}
+
+
+/*=======    What section =======*/
+
+.what {
+    width: 100%;
+    background: rgb(71, 78, 93);
+    color: #fff;
+    text-align: center;
+    padding: 70px 15px;
+}
+
+.what p {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.what-link {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+}
+
+.what-link i {
+    padding-right: 10px;
+}
+
+
+/*======Where section =======*/
+
+.where .title {
+    padding: 40px 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.where-item {
+    width: 30%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 10px;
+}
