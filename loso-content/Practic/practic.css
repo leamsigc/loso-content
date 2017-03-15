@@ -1,0 +1,73 @@
+.container {
+    width: 600px;
+    height: 200px;
+    position: relative;
+    background: silver;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.container>div {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #fff;
+}
+
+.red {
+    border: 1px solid red;
+    border-radius: 4px;
+    top: 20px;
+    right: 20px;
+}
+
+.red::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.blue {
+    top: 60px;
+    right: 60px;
+    border: 1px solid blue;
+    border-left: 1px dashed blue;
+}
+
+.blue div {
+    width: 80px;
+    height: 80px;
+    background: #55a8f1;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.blue div::before {
+    content: "";
+    background: #000;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.blue div::after {
+    content: "NINJA!";
+}
