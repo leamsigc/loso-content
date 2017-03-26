@@ -75,6 +75,8 @@ nav ul {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 nav li {
@@ -253,11 +255,17 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .articles .content {
     padding: 10px 0;
     text-align: center;
+    width: 45%;
 }
 
 .articles .content img {
@@ -267,3 +275,53 @@ h2 {
     margin: 20px auto;
     border: solid 4px #2980B9;
 }
+/*======== LOCATION CSS============*/
+.location{
+    background: #E74C3C;
+    padding: 40px 0;
+}
+#map , .map-wrap{
+    width: 80%;
+    margin :auto;
+    height: 400px;
+}
+
+/*======== FOOTER CSS============*/
+footer .container{
+    background: #2C3E50;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100px;
+}
+footer{
+    background: #2C3E50;
+    margin-top: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
