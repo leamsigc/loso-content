@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Spirax');
+ $text-color:#fff;
+ $general-padding:40px;
+ $bg-color: #21b2a6;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*GENERAL CSS*/
+html, body{
+    height: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+/*Header css */
+header{
+    background: url("https://source.unsplash.com/KfbFP_NvLLU/1400x800");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 800;
+    color: $text-color;
+    // margin-top: 80px;
+
+}
+.header-overlay{
+    width:100%;
+    margin: auto;
+    background: rgba(#000,  .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header_title{
+    padding: $general-padding ;
+    text-align: center;
+    min-height: 400px;
+    max-width:1200px;
+    width: 100%;
+    margin: auto;
+    margin-top: 150px; 
+}
+.main-title{
+    padding:80px  $general-padding;
+    font-family: 'Lato', sans-serif; 
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+.header_btn{
+    font-weight: 800;
+    color: $bg-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    // border: 5px solid $text-color;
+    border-radius: 3px;
+    padding: 15px $general-padding*1.5;
+    transition: all 1s;
+    background: $text-color;
+}
+.header_btn:hover{
+    box-shadow: 300px 0 $bg-color inset,
+                -300px 0 $bg-color inset ;
+                color: $text-color;
+}
+.header_img{
+    padding: $general-padding;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.header_perfil_img{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border:10px solid rgba(#21b2a6,.9);
+    border-radius: 50%;
+}
+// =========Menu css =======
+.main_nav{
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+      text-transform: uppercase;
+    color: $text-color;
+     font-family: 'Open Sans', sans-serif; 
+     z-index: 100;
+     background: rgba(255, 255, 255, .3)
+}
+.main_nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.main_nav  .container ul  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav_link{
+    text-decoration: none;
+    color: $text-color;
+    padding: $general-padding;
+    font-weight: 300;
+    transition: all 1s;
+}
+.logo{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Spirax', cursive;
+    font-size: 25px;
+    font-weight:100;
+    text-transform: none;
+    letter-spacing: 2px;
+    border: 3px solid rgba( #21b2a6, .7)
+}
+.nav_link:hover,.logo:hover{
+    color: #21b2a6;
+
+}
+// Portfolio section css
+.Portfolio{
+    margin-top:40px; 
+}
+.title{
+    color: #000;
+    text-align: center;
+    padding: 60px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif; 
+    font-weight: bold;
+    line-height: 140%;
+  
+}
+
+.title::after{
+    content: "";
+    display: block;
+    background: $bg-color;
+    width: 10%;
+    height: 5px;
+    margin:20px auto 0;
+    border-radius:2px; 
+}
+.portfolio_container{
+    // border: 1px solid $bg-color; 
+    display: flex;
+    background: rgba($bg-color, .6);
+}
+.portfolio__item{
+    width: 33.333%;
+    padding:10px;
+     font-family: 'Open Sans', sans-serif;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     h3{
+         text-transform: uppercase;
+         padding: 20px;
+         padding-top: 40px;
+         font-weight: bold;
+         line-height: 140%;
+     }
+     p{
+            font-family: 'Lato', sans-serif; 
+            line-height: 150%; 
+            padding: 20px 5px;
+     }
+     a{
+        text-decoration: none;
+        color:$bg-color;
+        align-self: flex-end;
+     }
+     img{
+         height: 200px;
+         width: 100%;
+     }
+}
+.p_item_1,.p_item_3{
+    background: rgba(255, 255, 255, .8)
+}
