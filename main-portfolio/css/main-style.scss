@@ -52,8 +52,7 @@ header {
     min-height: 400px;
     max-width: 1200px;
     width: 100%;
-    margin: auto;
-    margin-top: 150px;
+    margin: 200px auto;
 }
 
 .main-title {
@@ -84,19 +83,20 @@ header {
     padding: $general-padding;
     width: 100%;
     text-align: center;
+    display: none;
 }
 
 .header_perfil_img {
-    margin-top: 20px;
-    width: 200px;
-    height: 200px;
-    border: 10px solid rgba(#21b2a6, .9);
+    // margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(white, .3);
     border-radius: 50%;
 }
 
 // =========Menu css =======
 .main_nav {
-    padding: 10px;
+    // padding: 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -113,7 +113,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    // height: 60px;
 }
 
 .main_nav .container ul {
@@ -125,7 +125,7 @@ header {
 
 .nav_link {
     text-decoration: none;
-    color: $text-color;
+    color: #000;
     padding: $general-padding;
     font-weight: 300;
     transition: all 1s;
@@ -150,13 +150,12 @@ header {
 
 // Portfolio section css
 .Portfolio {
-    margin-top: 40px;
 }
 
 .title {
+    padding: 100px 0 ;
     color: #000;
     text-align: center;
-    padding: 60px;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -214,4 +213,35 @@ header {
 .p_item_1,
 .p_item_3 {
     background: rgba(255, 255, 255, .8)
+}
+// =====ABOUT SECTION =====
+.about{
+    background:url("https://source.unsplash.com/kqBzDbiVV40/1400x800") ;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 100px;
+    // color: $text-color;
+}
+.about_overlay{
+     background: linear-gradient(90deg , rgba(white, .4),rgba(#000, .4));
+}
+.about .header_img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about .title{
+// color: $text-color
+}
+.about_text{
+    text-align: left;
+    padding: 40px;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 16px;
+    line-height: 150%;
+}
+// FOOTER CSS
+footer{
+    height: 200px;
+    background: rgba(53,53,53,1);
 }
