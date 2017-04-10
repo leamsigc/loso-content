@@ -106,14 +106,13 @@ header {
     color: $text-color;
     font-family: 'Open Sans', sans-serif;
     z-index: 100;
-    background: rgba(255, 255, 255, .3)
+    background: rgba(53, 53, 53, 1);
 }
 
 .main_nav .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    // height: 60px;
+    align-items: center; // height: 60px;
 }
 
 .main_nav .container ul {
@@ -125,7 +124,7 @@ header {
 
 .nav_link {
     text-decoration: none;
-    color: #000;
+    color: $text-color;
     padding: $general-padding;
     font-weight: 300;
     transition: all 1s;
@@ -149,11 +148,10 @@ header {
 }
 
 // Portfolio section css
-.Portfolio {
-}
+.Portfolio {}
 
 .title {
-    padding: 100px 0 ;
+    padding: 100px 0;
     color: #000;
     text-align: center;
     text-transform: uppercase;
@@ -171,21 +169,24 @@ header {
     margin: 20px auto 0;
     border-radius: 2px;
 }
+// portfolio
+.Portfolio{}
 
 .portfolio_container {
-    // border: 1px solid $bg-color; 
     display: flex;
     background: rgba($bg-color, .6);
+    transition: display 5s ease-in-out;
 }
 
 .portfolio__item {
     width: 33.333%;
+    min-height: 400px;
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     h3 {
         text-transform: uppercase;
@@ -198,50 +199,59 @@ header {
         font-family: 'Lato', sans-serif;
         line-height: 150%;
         padding: 20px 5px;
+        display: none;
     }
     a {
         text-decoration: none;
-        color: $bg-color;
+        color: $text-color;
         align-self: flex-end;
-    }
-    img {
-        height: 200px;
-        width: 100%;
-    }
+        
+    } 
+    // img {
+    //     height: 200px;
+    //     width: 100%;
+    // }
 }
 
-.p_item_1,
-.p_item_3 {
-    background: rgba(255, 255, 255, .8)
+.portfolio__item:hover p {
+    display: flex;
 }
+.portfolio__item:hover a{
+ color: $bg-color;
+}
+
 // =====ABOUT SECTION =====
-.about{
-    background:url("https://source.unsplash.com/kqBzDbiVV40/1400x800") ;
+.about {
+    background: url("https://source.unsplash.com/kqBzDbiVV40/1400x800");
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 100px;
-    // color: $text-color;
+    margin-top: 100px; // color: $text-color;
 }
-.about_overlay{
-     background: linear-gradient(90deg , rgba(white, .4),rgba(#000, .4));
+
+.about_overlay {
+    background: linear-gradient(90deg, rgba(white, .4), rgba(#000, .4));
 }
+
 .about .header_img {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.about .title{
-// color: $text-color
+
+.about .title {
+    // color: $text-color
 }
-.about_text{
+
+.about_text {
     text-align: left;
     padding: 40px;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 150%;
 }
+
 // FOOTER CSS
-footer{
+footer {
     height: 200px;
-    background: rgba(53,53,53,1);
+    background: rgba(53, 53, 53, 1);
 }

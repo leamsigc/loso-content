@@ -93,7 +93,7 @@ header {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.3); }
+  background: #353535; }
 
 .main_nav .container {
   display: -webkit-flex;
@@ -120,7 +120,7 @@ header {
 
 .nav_link {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   padding: 40px;
   font-weight: 300;
   transition: all 1s; }
@@ -162,10 +162,12 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: rgba(33, 178, 166, 0.6); }
+  background: rgba(33, 178, 166, 0.6);
+  transition: display 5s ease-in-out; }
 
 .portfolio__item {
   width: 33.333%;
+  min-height: 400px;
   padding: 10px;
   font-family: 'Open Sans', sans-serif;
   position: relative;
@@ -175,9 +177,9 @@ header {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -190,20 +192,22 @@ header {
   .portfolio__item p {
     font-family: 'Lato', sans-serif;
     line-height: 150%;
-    padding: 20px 5px; }
+    padding: 20px 5px;
+    display: none; }
   .portfolio__item a {
     text-decoration: none;
-    color: #21b2a6;
+    color: #fff;
     -webkit-align-self: flex-end;
     -ms-flex-item-align: end;
     align-self: flex-end; }
-  .portfolio__item img {
-    height: 200px;
-    width: 100%; }
 
-.p_item_1,
-.p_item_3 {
-  background: rgba(255, 255, 255, 0.8); }
+.portfolio__item:hover p {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.portfolio__item:hover a {
+  color: #21b2a6; }
 
 .about {
   background: url("https://source.unsplash.com/kqBzDbiVV40/1400x800");
